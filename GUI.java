@@ -1,19 +1,13 @@
 import java.awt.*;
 import javax.swing.*;
 import java.awt.event.*;
-import java.awt.Dimension;
-import javax.swing.JPanel;
-import javax.swing.Timer;
-import java.awt.event.ActionEvent;
-import java.awt.event.KeyAdapter;
 public class GUI extends JFrame {
-  
-  
   public JButton bSTART = new JButton();
   public JButton bBACK = new JButton();
   public JButton bSETTINGS = new JButton();
   public JButton bQUIT = new JButton();
   public JButton bRESUME = new JButton();
+  //public JSlider jSlider = new JSlider();
   Timer timer = new Timer(1000, null);
   Dimension frameSize;
   public static int sek = 0;
@@ -139,6 +133,8 @@ public class GUI extends JFrame {
     bQUIT.setVisible(true);
     bQUIT.setFocusable(false);
     add(bQUIT);
+    //--------------------------------------------------------
+    //jSlider.addChangeListener(ChangeListener);
     //--------------------------------------------------------
     timer.addActionListener(new ActionListener() {
       @Override
