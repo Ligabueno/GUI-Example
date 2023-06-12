@@ -10,6 +10,6 @@ public class Panel extends JPanel{
     setVisible(false);
     setBackground(Color.BLACK);
     setOpaque(true);
-    addKeyListener(new KeyWorker());
+    
   }
 }
